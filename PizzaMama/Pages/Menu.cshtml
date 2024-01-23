@@ -1,0 +1,39 @@
+﻿@page
+@model PizzaMama.Pages.MenuModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu des pizzas</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+
+    @* <div class="small_logo"> *@
+    <a asp-page="Index">
+        <img src="~/images/small_logo.png" id="small_logo" />
+    </a>
+    @* </div> *@
+
+    <div class="menu_title">
+        <h1>Les Pizzas</h1>
+    </div>
+
+    <div class="pizza_affichage">
+        @foreach (var item in Model.Pizza.OrderBy(item => item.prix))
+        {
+            <span class="pizza_nom">@item.nom</span>
+            <span class="pizza_prix">@String.Format("{0:0.00}", item.prix)€</span>
+            <p class="pizza_ingredients">@Html.DisplayFor(modelItem => item.ingredients)</p>
+            @if (item.isVege)
+            {
+                <p class="badge_vege">Végétarienne</p>
+            }
+            <br/>
+        }
+    </div>
+
+</body>
+</html>

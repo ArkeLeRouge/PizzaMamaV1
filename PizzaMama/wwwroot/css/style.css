@@ -1,0 +1,91 @@
+﻿body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/menu_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: Arial;
+    margin-left: 0px;
+    color: white;
+}
+
+#body_index {
+    background-image: url("/images/main_background.jpg");
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+
+.index {
+}
+
+p.to_menu {
+    color: red;
+    text-decoration: underline red;
+    text-align: center;
+}
+
+h1 {
+    background-color: #DD7845;
+    display: inline;
+    padding: 10px 30px;
+}
+
+li{
+    /*color: blue;*/
+}
+
+#small_logo {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.menu_title {
+    margin: 45px 25px;
+    margin-left: 0px;
+}
+
+span.pizza_nom {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+span.pizza_prix {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #DD7845;
+}
+
+p.pizza_ingredients {
+    font-size: 14px;
+    color: #C8C8C8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 320px;
+}
+
+p.badge_vege {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: #DD7845;
+    display: inline;
+    padding: 3px 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.pizza_affichage {
+    margin-left: 45px;
+}
